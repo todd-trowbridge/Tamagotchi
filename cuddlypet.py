@@ -13,3 +13,11 @@ class CuddlyPet(Pet):
     self.happiness -= self.mopiness/2
     for toy in self.toys:
       self.happiness += toy.use()
+
+  def __str__(self):
+    return f'''
+    name: {self.name}
+    happiness: {self.happiness}
+    fullness: {self.fullness}
+    cuddliness: extra cuddly
+    '''

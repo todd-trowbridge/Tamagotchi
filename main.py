@@ -32,7 +32,7 @@ while True:
     pet.give_toy(Toy())
   pet.be_alive()
   if not pet.is_alive():
-    print(pet.get_status())
+    print(pet)
     print(f"RIP {pet.name}")
     break
   
